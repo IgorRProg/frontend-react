@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Pacifico&display=swap');
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./images/tela-inicial.png');
+    min-height: 100vh;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.usuario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.senha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}  
+
+button {
+    display: inline-flex;
+    margin: 10px;
+    padding: 9px;
+    font-size: 16px;
+    background-color: #292929;
+    color: #f1f1f1;
+}
+
+.mensagem-erro {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    background-color: red;
+    color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.missoes,
+.personagens {
+    width: 45%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nome-personagem {
+    font-family: "Abril Fatface", serif;
+    font-size: 22px;
+    color: #292929;
+}  
+
+h1,
+h2 {
+    margin-top: 12px;
+    font-family: "Abril Fatface", serif;
+    color: #fff4d8;
+    text-shadow: 1px 1px 0 #292929;
+}
+
+.li-wrapper {
+    position: relative;
+    color: #292929;
+}
+
+.descricao {
+    position: fixed;
+    display: none;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    background-color: #292929;
+    color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.li-wrapper:hover .descricao {
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+  
+li {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+}
+
+li:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+.personagem-img {
+    width: 20%;
+    height: 20%;
+}
+  
+.descricao-missao {
+    display: none;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    background-color: #292929;
+    color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+h3 {
+    font-family: "Abril Fatface", serif;
+    color: #fff4d8;
+    text-shadow: 1px 1px 0 #292929;
+}
+
+.selecao-personagem {
+    color: #f1f1f1;
+}
+
+@media only screen and (max-width: 900px) {
+    .missoes,
+    .personagens {
+        width: 45%;
+    }
+
+    .usuario,
+    .senha {
+        width: auto;
+    }
+
+    .container {
+        max-width: 960px;
+    }
+
+    .app {
+        background-size: cover;
+        min-height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .missoes,
+    .personagens {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .app {
+        background-size: cover;
+        min-height: 100vh;
+    }
+}
